@@ -3,13 +3,6 @@ import styles, { layout } from "../style";
 import Button from "./Button";
 import PropTypes from "prop-types";
 
-FeatureCard.propTypes = {
-  icon: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-  index: PropTypes.number.isRequired,
-};
-
 const Business = () => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
@@ -51,5 +44,11 @@ const FeatureCard = ({ icon, title, content, index }) => (
     </div>
   </div>
 );
+FeatureCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+};
 
 export default Business;

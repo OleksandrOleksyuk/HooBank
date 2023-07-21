@@ -1,13 +1,6 @@
 import { quotes } from "../assets";
 import PropTypes from "prop-types";
 
-FeedbackCard.propTypes = {
-  content: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  img: PropTypes.number.isRequired,
-};
-
 const FeedbackCard = ({ content, name, title, img }) => (
   <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card">
     <img src={quotes} alt="double_quotes" className="w-16 h-8 object-contain" />
@@ -25,5 +18,12 @@ const FeedbackCard = ({ content, name, title, img }) => (
     </div>
   </div>
 );
+
+FeedbackCard.propTypes = {
+  content: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+};
 
 export default FeedbackCard;
